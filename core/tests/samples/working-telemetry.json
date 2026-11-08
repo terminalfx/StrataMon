@@ -1,0 +1,317 @@
+{
+ "schema_version": 1,
+ "source": "server-v1",
+ "sampled_at": 1793914429.3171878,
+ "instance": {
+  "boot_time": 1793914420,
+  "server": "strata",
+  "id": "e38056aec3a84908a9662747b3eaabdc",
+  "state": "ready"
+ },
+ "model": {
+  "id": "qwen3.8-flash-next-mock-solo",
+  "loaded": true,
+  "context": 32768
+ },
+ "work": {
+  "slots_requested": null,
+  "slots_effective": 1,
+  "active": 1,
+  "occupied_slots": null,
+  "queued": 0,
+  "waiting": null,
+  "outside_slots": null,
+  "slots": [],
+  "groups": null,
+  "effective_rows_window": null,
+  "batch_active_rows_window": null,
+  "batch_sample_windows": null,
+  "batch_sample_rows": null,
+  "batch_sample_active_rows": null,
+  "batch_sample_span_s": null,
+  "batch_sample_age_s": null,
+  "stage_in_flight": [],
+  "stage_sample_span_s": null,
+  "stage_sample_age_s": null,
+  "requests": [
+   {
+    "id": "2c4f67b93b9d",
+    "state": "admitted",
+    "queued_at": 1793914428.4964347,
+    "admitted_at": 1793914428.4964347,
+    "prompt_tokens": 483,
+    "first_engine_token_s": 0.02,
+    "slot": null,
+    "group": null,
+    "replica": null,
+    "generated": null,
+    "prompt_read": null
+   }
+  ],
+  "requests_omitted": 0,
+  "max_queue": null,
+  "admission_limit": null,
+  "admission_reserved": 1,
+  "admission_rejected": 0,
+  "oldest_queue_s": 0,
+  "queue_timeout_s": null,
+  "queue_timeouts": 0,
+  "client_disconnect_cancels": 0
+ },
+ "rates": {
+  "answer_tok_s": 49.3,
+  "answer_window_s": 2.0,
+  "prefill_tok_s": null,
+  "output_tokens_server_counter": 340
+ },
+ "topology": {
+  "mode": null,
+  "stages": [],
+  "selected_devices": [],
+  "replica_devices": [],
+  "replica_stages": [],
+  "configured_split": null,
+  "resolved": false,
+  "source": null
+ },
+ "devices": [
+  {
+   "index": 0,
+   "name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+   "mem_used": 399953920,
+   "mem_total": 8546942976,
+   "util": 18,
+   "temp": 48,
+   "power": 7.931
+  }
+ ],
+ "ram": {
+  "used": 17810481152,
+  "total": 33693368320
+ },
+ "recent": [
+  {
+   "id": "32d7f9189b5f",
+   "time": 1793914426.9547703,
+   "duration_s": 1.2,
+   "finish": "length",
+   "prompt_tokens": 483,
+   "reused": null,
+   "output_tokens": 60,
+   "prompt_ms": null,
+   "decode_ms": null,
+   "first_engine_token_s": 0.02
+  },
+  {
+   "id": "4cd78ff485c0",
+   "time": 1793914425.4144664,
+   "duration_s": 1.2,
+   "finish": "length",
+   "prompt_tokens": 483,
+   "reused": null,
+   "output_tokens": 60,
+   "prompt_ms": null,
+   "decode_ms": null,
+   "first_engine_token_s": 0.02
+  },
+  {
+   "id": "56b2139c2422",
+   "time": 1793914423.8816173,
+   "duration_s": 1.2,
+   "finish": "length",
+   "prompt_tokens": 483,
+   "reused": null,
+   "output_tokens": 60,
+   "prompt_ms": null,
+   "decode_ms": null,
+   "first_engine_token_s": 0.021
+  },
+  {
+   "id": "a7dadfba98e4",
+   "time": 1793914422.359,
+   "duration_s": 1.2,
+   "finish": "length",
+   "prompt_tokens": 483,
+   "reused": null,
+   "output_tokens": 60,
+   "prompt_ms": null,
+   "decode_ms": null,
+   "first_engine_token_s": 0.02
+  },
+  {
+   "id": "ec3149fb6d9d",
+   "time": 1793914420.8354516,
+   "duration_s": 1.2,
+   "finish": "length",
+   "prompt_tokens": 483,
+   "reused": null,
+   "output_tokens": 60,
+   "prompt_ms": null,
+   "decode_ms": null,
+   "first_engine_token_s": 0.021
+  }
+ ],
+ "totals": {
+  "since": 1793914420.654461,
+  "requests": 5,
+  "prompt_tokens": 2415,
+  "output_tokens": 300
+ },
+ "quality": {
+  "request_correlation": "reported",
+  "batch_window_rows": "unavailable",
+  "batch_window_source": null,
+  "stage_in_flight": "unavailable",
+  "stage_in_flight_source": null,
+  "per_device": "measured",
+  "placement": "unavailable"
+ },
+ "activity": {
+  "last_seq": 23,
+  "events": [
+   {
+    "seq": 1,
+    "at": 1793914420.8354516,
+    "request_id": "ec3149fb6d9d",
+    "event": "queued"
+   },
+   {
+    "seq": 2,
+    "at": 1793914420.8354516,
+    "request_id": "ec3149fb6d9d",
+    "event": "admitted"
+   },
+   {
+    "seq": 3,
+    "at": 1793914420.8563051,
+    "request_id": "ec3149fb6d9d",
+    "event": "first_token"
+   },
+   {
+    "seq": 4,
+    "at": 1793914422.0569134,
+    "request_id": "ec3149fb6d9d",
+    "event": "finished",
+    "outcome": "length"
+   },
+   {
+    "seq": 5,
+    "at": 1793914422.359,
+    "request_id": "a7dadfba98e4",
+    "event": "queued"
+   },
+   {
+    "seq": 6,
+    "at": 1793914422.359,
+    "request_id": "a7dadfba98e4",
+    "event": "admitted"
+   },
+   {
+    "seq": 7,
+    "at": 1793914422.3793561,
+    "request_id": "a7dadfba98e4",
+    "event": "first_token"
+   },
+   {
+    "seq": 8,
+    "at": 1793914423.5791862,
+    "request_id": "a7dadfba98e4",
+    "event": "finished",
+    "outcome": "length"
+   },
+   {
+    "seq": 9,
+    "at": 1793914423.8816173,
+    "request_id": "56b2139c2422",
+    "event": "queued"
+   },
+   {
+    "seq": 10,
+    "at": 1793914423.8816173,
+    "request_id": "56b2139c2422",
+    "event": "admitted"
+   },
+   {
+    "seq": 11,
+    "at": 1793914423.9025438,
+    "request_id": "56b2139c2422",
+    "event": "first_token"
+   },
+   {
+    "seq": 12,
+    "at": 1793914425.1017053,
+    "request_id": "56b2139c2422",
+    "event": "finished",
+    "outcome": "length"
+   },
+   {
+    "seq": 13,
+    "at": 1793914425.4144664,
+    "request_id": "4cd78ff485c0",
+    "event": "queued"
+   },
+   {
+    "seq": 14,
+    "at": 1793914425.4144664,
+    "request_id": "4cd78ff485c0",
+    "event": "admitted"
+   },
+   {
+    "seq": 15,
+    "at": 1793914425.435546,
+    "request_id": "4cd78ff485c0",
+    "event": "first_token"
+   },
+   {
+    "seq": 16,
+    "at": 1793914426.634354,
+    "request_id": "4cd78ff485c0",
+    "event": "finished",
+    "outcome": "length"
+   },
+   {
+    "seq": 17,
+    "at": 1793914426.9547703,
+    "request_id": "32d7f9189b5f",
+    "event": "queued"
+   },
+   {
+    "seq": 18,
+    "at": 1793914426.9547703,
+    "request_id": "32d7f9189b5f",
+    "event": "admitted"
+   },
+   {
+    "seq": 19,
+    "at": 1793914426.975719,
+    "request_id": "32d7f9189b5f",
+    "event": "first_token"
+   },
+   {
+    "seq": 20,
+    "at": 1793914428.176216,
+    "request_id": "32d7f9189b5f",
+    "event": "finished",
+    "outcome": "length"
+   },
+   {
+    "seq": 21,
+    "at": 1793914428.4964347,
+    "request_id": "2c4f67b93b9d",
+    "event": "queued"
+   },
+   {
+    "seq": 22,
+    "at": 1793914428.4964347,
+    "request_id": "2c4f67b93b9d",
+    "event": "admitted"
+   },
+   {
+    "seq": 23,
+    "at": 1793914428.516604,
+    "request_id": "2c4f67b93b9d",
+    "event": "first_token"
+   }
+  ]
+ }
+}

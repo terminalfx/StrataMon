@@ -1,0 +1,98 @@
+{
+ "schema_version": 1,
+ "source": "server-v1",
+ "sampled_at": 1793914429.3566785,
+ "instance": {
+  "boot_time": 1793914420,
+  "server": "strata",
+  "id": "b2c1607a1ef749ca80d896a5c0eb87a5",
+  "state": "ready"
+ },
+ "model": {
+  "id": "qwen3.8-flash-next-mock-idle",
+  "loaded": true,
+  "context": 32768
+ },
+ "work": {
+  "slots_requested": null,
+  "slots_effective": 1,
+  "active": 0,
+  "occupied_slots": null,
+  "queued": 0,
+  "waiting": null,
+  "outside_slots": null,
+  "slots": [],
+  "groups": null,
+  "effective_rows_window": null,
+  "batch_active_rows_window": null,
+  "batch_sample_windows": null,
+  "batch_sample_rows": null,
+  "batch_sample_active_rows": null,
+  "batch_sample_span_s": null,
+  "batch_sample_age_s": null,
+  "stage_in_flight": [],
+  "stage_sample_span_s": null,
+  "stage_sample_age_s": null,
+  "requests": [],
+  "requests_omitted": 0,
+  "max_queue": null,
+  "admission_limit": null,
+  "admission_reserved": 0,
+  "admission_rejected": 0,
+  "oldest_queue_s": 0,
+  "queue_timeout_s": null,
+  "queue_timeouts": 0,
+  "client_disconnect_cancels": 0
+ },
+ "rates": {
+  "answer_tok_s": null,
+  "answer_window_s": null,
+  "prefill_tok_s": null,
+  "output_tokens_server_counter": 0
+ },
+ "topology": {
+  "mode": null,
+  "stages": [],
+  "selected_devices": [],
+  "replica_devices": [],
+  "replica_stages": [],
+  "configured_split": null,
+  "resolved": false,
+  "source": null
+ },
+ "devices": [
+  {
+   "index": 0,
+   "name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+   "mem_used": 399953920,
+   "mem_total": 8546942976,
+   "util": 18,
+   "temp": 48,
+   "power": 7.931
+  }
+ ],
+ "ram": {
+  "used": 17810481152,
+  "total": 33693368320
+ },
+ "recent": [],
+ "totals": {
+  "since": 1793914420.654461,
+  "requests": 0,
+  "prompt_tokens": 0,
+  "output_tokens": 0
+ },
+ "quality": {
+  "request_correlation": "reported",
+  "batch_window_rows": "unavailable",
+  "batch_window_source": null,
+  "stage_in_flight": "unavailable",
+  "stage_in_flight_source": null,
+  "per_device": "measured",
+  "placement": "unavailable"
+ },
+ "activity": {
+  "last_seq": 0,
+  "events": []
+ }
+}

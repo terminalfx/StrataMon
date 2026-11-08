@@ -1,0 +1,497 @@
+{
+ "schema_version": 1,
+ "source": "server-v1",
+ "sampled_at": 1793914429.3234313,
+ "instance": {
+  "boot_time": 1793914420,
+  "server": "strata",
+  "id": "d991685165a24e859a9ea3f80b62da1e",
+  "state": "ready"
+ },
+ "model": {
+  "id": "qwen3.8-flash-next-mock-batch",
+  "loaded": true,
+  "context": 32768
+ },
+ "work": {
+  "slots_requested": null,
+  "slots_effective": 4,
+  "active": 4,
+  "occupied_slots": null,
+  "queued": 0,
+  "waiting": 0,
+  "outside_slots": 4,
+  "slots": [],
+  "groups": null,
+  "effective_rows_window": null,
+  "batch_active_rows_window": null,
+  "batch_sample_windows": null,
+  "batch_sample_rows": null,
+  "batch_sample_active_rows": null,
+  "batch_sample_span_s": null,
+  "batch_sample_age_s": null,
+  "stage_in_flight": [],
+  "stage_sample_span_s": null,
+  "stage_sample_age_s": null,
+  "requests": [
+   {
+    "id": "6ef2cb132f7a",
+    "state": "waiting",
+    "queued_at": 1793914428.486935,
+    "admitted_at": 1793914428.486935,
+    "prompt_tokens": 483,
+    "first_engine_token_s": 0.02,
+    "slot": null,
+    "group": null,
+    "replica": null,
+    "generated": null,
+    "prompt_read": null
+   },
+   {
+    "id": "fd8d3240d436",
+    "state": "waiting",
+    "queued_at": 1793914428.4879372,
+    "admitted_at": 1793914428.4879372,
+    "prompt_tokens": 483,
+    "first_engine_token_s": 0.02,
+    "slot": null,
+    "group": null,
+    "replica": null,
+    "generated": null,
+    "prompt_read": null
+   },
+   {
+    "id": "7c310a879ecb",
+    "state": "waiting",
+    "queued_at": 1793914428.4879372,
+    "admitted_at": 1793914428.4879372,
+    "prompt_tokens": 483,
+    "first_engine_token_s": 0.02,
+    "slot": null,
+    "group": null,
+    "replica": null,
+    "generated": null,
+    "prompt_read": null
+   },
+   {
+    "id": "600d01aac78a",
+    "state": "waiting",
+    "queued_at": 1793914428.4879372,
+    "admitted_at": 1793914428.4879372,
+    "prompt_tokens": 483,
+    "first_engine_token_s": 0.02,
+    "slot": null,
+    "group": null,
+    "replica": null,
+    "generated": null,
+    "prompt_read": null
+   }
+  ],
+  "requests_omitted": 0,
+  "max_queue": null,
+  "admission_limit": null,
+  "admission_reserved": 4,
+  "admission_rejected": 0,
+  "oldest_queue_s": 0.8364963531494141,
+  "queue_timeout_s": null,
+  "queue_timeouts": 0,
+  "client_disconnect_cancels": 0
+ },
+ "rates": {
+  "answer_tok_s": 196.7,
+  "answer_window_s": 2.0,
+  "prefill_tok_s": null,
+  "output_tokens_server_counter": 1362
+ },
+ "topology": {
+  "mode": null,
+  "stages": [],
+  "selected_devices": [],
+  "replica_devices": [],
+  "replica_stages": [],
+  "configured_split": null,
+  "resolved": false,
+  "source": null
+ },
+ "devices": [
+  {
+   "index": 0,
+   "name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+   "mem_used": 399953920,
+   "mem_total": 8546942976,
+   "util": 18,
+   "temp": 48,
+   "power": 7.931
+  }
+ ],
+ "ram": {
+  "used": 17810481152,
+  "total": 33693368320
+ },
+ "recent": [
+  {
+   "id": "154fe0ae8786",
+   "time": 1793914426.9618275,
+   "duration_s": 1.2,
+   "finish": "length",
+   "prompt_tokens": 483,
+   "reused": null,
+   "output_tokens": 60,
+   "prompt_ms": null,
+   "decode_ms": null,
+   "first_engine_token_s": 0.02
+  },
+  {
+   "id": "590a2a77276e",
+   "time": 1793914426.9628286,
+   "duration_s": 1.2,
+   "finish": "length",
+   "prompt_tokens": 483,
+   "reused": null,
+   "output_tokens": 60,
+   "prompt_ms": null,
+   "decode_ms": null,
+   "first_engine_token_s": 0.02
+  },
+  {
+   "id": "12415cfa1c7c",
+   "time": 1793914426.9638276,
+   "duration_s": 1.2,
+   "finish": "length",
+   "prompt_tokens": 483,
+   "reused": null,
+   "output_tokens": 60,
+   "prompt_ms": null,
+   "decode_ms": null,
+   "first_engine_token_s": 0.02
+  },
+  {
+   "id": "954398c5f891",
+   "time": 1793914426.9628286,
+   "duration_s": 1.2,
+   "finish": "length",
+   "prompt_tokens": 483,
+   "reused": null,
+   "output_tokens": 60,
+   "prompt_ms": null,
+   "decode_ms": null,
+   "first_engine_token_s": 0.02
+  },
+  {
+   "id": "f75653eb8407",
+   "time": 1793914425.4418821,
+   "duration_s": 1.2,
+   "finish": "length",
+   "prompt_tokens": 483,
+   "reused": null,
+   "output_tokens": 60,
+   "prompt_ms": null,
+   "decode_ms": null,
+   "first_engine_token_s": 0.02
+  },
+  {
+   "id": "6d9d414a8108",
+   "time": 1793914425.4397197,
+   "duration_s": 1.2,
+   "finish": "length",
+   "prompt_tokens": 483,
+   "reused": null,
+   "output_tokens": 60,
+   "prompt_ms": null,
+   "decode_ms": null,
+   "first_engine_token_s": 0.021
+  },
+  {
+   "id": "e44c8b68edf8",
+   "time": 1793914425.4397197,
+   "duration_s": 1.2,
+   "finish": "length",
+   "prompt_tokens": 483,
+   "reused": null,
+   "output_tokens": 60,
+   "prompt_ms": null,
+   "decode_ms": null,
+   "first_engine_token_s": 0.02
+  },
+  {
+   "id": "8296a9808126",
+   "time": 1793914425.4397197,
+   "duration_s": 1.2,
+   "finish": "length",
+   "prompt_tokens": 483,
+   "reused": null,
+   "output_tokens": 60,
+   "prompt_ms": null,
+   "decode_ms": null,
+   "first_engine_token_s": 0.021
+  },
+  {
+   "id": "1cb207a4748d",
+   "time": 1793914423.9174871,
+   "duration_s": 1.2,
+   "finish": "length",
+   "prompt_tokens": 483,
+   "reused": null,
+   "output_tokens": 60,
+   "prompt_ms": null,
+   "decode_ms": null,
+   "first_engine_token_s": 0.02
+  },
+  {
+   "id": "3baed7d63bc1",
+   "time": 1793914423.9174871,
+   "duration_s": 1.2,
+   "finish": "length",
+   "prompt_tokens": 483,
+   "reused": null,
+   "output_tokens": 60,
+   "prompt_ms": null,
+   "decode_ms": null,
+   "first_engine_token_s": 0.02
+  },
+  {
+   "id": "ce71dc322f2e",
+   "time": 1793914423.9174871,
+   "duration_s": 1.2,
+   "finish": "length",
+   "prompt_tokens": 483,
+   "reused": null,
+   "output_tokens": 60,
+   "prompt_ms": null,
+   "decode_ms": null,
+   "first_engine_token_s": 0.02
+  },
+  {
+   "id": "a6063db4da51",
+   "time": 1793914423.901532,
+   "duration_s": 1.2,
+   "finish": "length",
+   "prompt_tokens": 483,
+   "reused": null,
+   "output_tokens": 60,
+   "prompt_ms": null,
+   "decode_ms": null,
+   "first_engine_token_s": 0.021
+  }
+ ],
+ "totals": {
+  "since": 1793914420.6555169,
+  "requests": 20,
+  "prompt_tokens": 9660,
+  "output_tokens": 1200
+ },
+ "quality": {
+  "request_correlation": "reported",
+  "batch_window_rows": "unavailable",
+  "batch_window_source": null,
+  "stage_in_flight": "unavailable",
+  "stage_in_flight_source": null,
+  "per_device": "measured",
+  "placement": "unavailable"
+ },
+ "activity": {
+  "last_seq": 92,
+  "events": [
+   {
+    "seq": 61,
+    "at": 1793914426.658695,
+    "request_id": "8296a9808126",
+    "event": "finished",
+    "outcome": "length"
+   },
+   {
+    "seq": 62,
+    "at": 1793914426.6592066,
+    "request_id": "e44c8b68edf8",
+    "event": "finished",
+    "outcome": "length"
+   },
+   {
+    "seq": 63,
+    "at": 1793914426.6592066,
+    "request_id": "6d9d414a8108",
+    "event": "finished",
+    "outcome": "length"
+   },
+   {
+    "seq": 64,
+    "at": 1793914426.6597226,
+    "request_id": "f75653eb8407",
+    "event": "finished",
+    "outcome": "length"
+   },
+   {
+    "seq": 65,
+    "at": 1793914426.9618275,
+    "request_id": "154fe0ae8786",
+    "event": "queued"
+   },
+   {
+    "seq": 66,
+    "at": 1793914426.9618275,
+    "request_id": "154fe0ae8786",
+    "event": "admitted"
+   },
+   {
+    "seq": 67,
+    "at": 1793914426.9628286,
+    "request_id": "590a2a77276e",
+    "event": "queued"
+   },
+   {
+    "seq": 68,
+    "at": 1793914426.9628286,
+    "request_id": "590a2a77276e",
+    "event": "admitted"
+   },
+   {
+    "seq": 69,
+    "at": 1793914426.9628286,
+    "request_id": "954398c5f891",
+    "event": "queued"
+   },
+   {
+    "seq": 70,
+    "at": 1793914426.9628286,
+    "request_id": "954398c5f891",
+    "event": "admitted"
+   },
+   {
+    "seq": 71,
+    "at": 1793914426.9638276,
+    "request_id": "12415cfa1c7c",
+    "event": "queued"
+   },
+   {
+    "seq": 72,
+    "at": 1793914426.9638276,
+    "request_id": "12415cfa1c7c",
+    "event": "admitted"
+   },
+   {
+    "seq": 73,
+    "at": 1793914426.9827716,
+    "request_id": "154fe0ae8786",
+    "event": "first_token"
+   },
+   {
+    "seq": 74,
+    "at": 1793914426.983274,
+    "request_id": "590a2a77276e",
+    "event": "first_token"
+   },
+   {
+    "seq": 75,
+    "at": 1793914426.9837813,
+    "request_id": "954398c5f891",
+    "event": "first_token"
+   },
+   {
+    "seq": 76,
+    "at": 1793914426.9842944,
+    "request_id": "12415cfa1c7c",
+    "event": "first_token"
+   },
+   {
+    "seq": 77,
+    "at": 1793914428.1834972,
+    "request_id": "954398c5f891",
+    "event": "finished",
+    "outcome": "length"
+   },
+   {
+    "seq": 78,
+    "at": 1793914428.184012,
+    "request_id": "12415cfa1c7c",
+    "event": "finished",
+    "outcome": "length"
+   },
+   {
+    "seq": 79,
+    "at": 1793914428.184012,
+    "request_id": "590a2a77276e",
+    "event": "finished",
+    "outcome": "length"
+   },
+   {
+    "seq": 80,
+    "at": 1793914428.18458,
+    "request_id": "154fe0ae8786",
+    "event": "finished",
+    "outcome": "length"
+   },
+   {
+    "seq": 81,
+    "at": 1793914428.486935,
+    "request_id": "6ef2cb132f7a",
+    "event": "queued"
+   },
+   {
+    "seq": 82,
+    "at": 1793914428.486935,
+    "request_id": "6ef2cb132f7a",
+    "event": "admitted"
+   },
+   {
+    "seq": 83,
+    "at": 1793914428.4879372,
+    "request_id": "fd8d3240d436",
+    "event": "queued"
+   },
+   {
+    "seq": 84,
+    "at": 1793914428.4879372,
+    "request_id": "fd8d3240d436",
+    "event": "admitted"
+   },
+   {
+    "seq": 85,
+    "at": 1793914428.4879372,
+    "request_id": "7c310a879ecb",
+    "event": "queued"
+   },
+   {
+    "seq": 86,
+    "at": 1793914428.4879372,
+    "request_id": "7c310a879ecb",
+    "event": "admitted"
+   },
+   {
+    "seq": 87,
+    "at": 1793914428.4879372,
+    "request_id": "600d01aac78a",
+    "event": "queued"
+   },
+   {
+    "seq": 88,
+    "at": 1793914428.4879372,
+    "request_id": "600d01aac78a",
+    "event": "admitted"
+   },
+   {
+    "seq": 89,
+    "at": 1793914428.5075383,
+    "request_id": "6ef2cb132f7a",
+    "event": "first_token"
+   },
+   {
+    "seq": 90,
+    "at": 1793914428.5086029,
+    "request_id": "fd8d3240d436",
+    "event": "first_token"
+   },
+   {
+    "seq": 91,
+    "at": 1793914428.5091186,
+    "request_id": "7c310a879ecb",
+    "event": "first_token"
+   },
+   {
+    "seq": 92,
+    "at": 1793914428.5091186,
+    "request_id": "600d01aac78a",
+    "event": "first_token"
+   }
+  ]
+ }
+}

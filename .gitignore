@@ -1,0 +1,26 @@
+# Rust
+target/
+
+# Published builds. The Windows exe is kept in the repository so the repository itself is a
+# place to get it from; anything else that lands in dist/ stays out.
+dist/*
+!dist/StrataMon-win-x64.exe
+
+# Pictures the interface tests save with STRATAMON_SHOTS for a person to look at.
+/shots/
+
+# Release signing keys never belong in this repository.
+*.key
+*.minisig
+
+# Secrets, and what editors and the system leave behind.
+.env
+.vs/
+.vscode/
+.idea/
+*.swp
+*~
+Thumbs.db
+Desktop.ini
+.DS_Store
+$RECYCLE.BIN/

@@ -1,0 +1,13 @@
+[package]
+name = "stratamon-ui"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+stratamon-core = { path = "../core" }
+ab_glyph = "0.2"
+tiny-skia = { version = "0.12", default-features = false, features = ["std", "simd"] }
+
+[dev-dependencies]
+tiny-skia = { version = "0.12", features = ["png-format"] }

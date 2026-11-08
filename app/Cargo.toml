@@ -1,0 +1,33 @@
+[package]
+name = "stratamon"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "StrataMon"
+path = "src/main.rs"
+
+[dependencies]
+stratamon-core = { path = "../core" }
+stratamon-ui = { path = "../ui" }
+arboard = { version = "3", default-features = false }
+softbuffer = "0.4"
+tiny-skia = { version = "0.12", default-features = false, features = ["std", "simd"] }
+winit = "0.30"
+
+[features]
+# Lets tests point updates at a local server with a test key. Shipped builds never have this.
+test-updates = []
+
+# TLS comes from Windows there, which adds almost nothing. Linux has no single system library to rely on.
+[target.'cfg(windows)'.dependencies]
+ureq = { version = "3", default-features = false, features = ["native-tls-no-default"] }
+windows-sys = { version = "0.61", features = ["Win32_Foundation", "Win32_System_Time", "Win32_UI_Shell", "Win32_UI_WindowsAndMessaging"] }
+
+[target.'cfg(not(windows))'.dependencies]
+ureq = { version = "3", default-features = false, features = ["rustls"] }
+libc = "0.2"
+
+[target.'cfg(windows)'.build-dependencies]
+embed-resource = "3"
